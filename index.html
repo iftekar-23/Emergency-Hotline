@@ -1,11 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emergency-Hotline</title>
+
+    <!-- tailwind and daisy ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
 </head>
+
 <body>
-    
+    <header>
+        <nav class="p-2 md:p-4 flex justify-between items-center">
+            <div class="h-[50px] flex gap-1 md:gap-2">
+                <img class="" src="./assets/logo.png" alt="">
+                <div>
+                    <h1 class="text-[#006747] font-extrabold">Emergency <br> Service</h1>
+                </div>
+            </div>
+
+            <div class="flex gap-2 md:gap-3">
+                <div class="p-1 md:p-3 bg-[#41ff6b1a] rounded-4xl ">
+                    <span>0</span>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="p-1 md:p-3 bg-[#41ff6b1a] rounded-4xl ">
+                    <span>100</span>
+                    <i class="fa-solid fa-coins"></i>
+                </div>
+                <div class="p-1 md:p-3 bg-[#006747] flex gap-1 rounded-4xl  text-white">
+                    <span>0</span>
+                    <p>copy</p>
+                </div>
+            </div>
+        </nav>
+
+        <!-- header section -->
+
+        <section
+            class="p-2 md:p-1 min-h-[240px] flex justify-center items-center bg-gradient-to-r from-[#013223] to-[#006747]">
+            <div class="">
+                <figure class="flex justify-center ">
+                    <img class="h-[90px]" src="./assets/logo.png" alt="">
+                </figure>
+                <h1 class="text-center text-4xl font-bold my-3 text-white">Emergency Service Directory</h1>
+                <p class="text-center text-white ">Government Emergency Services at Your Fingertip – A Project by
+                    Government of the People’s Republic of
+                    Bangladesh</p>
+            </div>
+        </section>
+
+
+    </header>
+
+    <main>
+
+        <section id="main-container" class="w-11/12 mx-auto py-10 grid grid-cols-12 gap-8">
+            <section id="product-box" class="col-span-9">
+                <div class="">
+
+                    <div class=" grid grid-cols-3 gap-5">
+
+                        <div class="flex justify-between items-center">
+                            <img src="./assets/emergency.png" alt="">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <aside id="cart-box" class="col-span-3">
+                <div class="bg-white p-5 rounded">
+                    <h2 class="font-bold mb-5">Have a Cupon</h2>
+                    <div class="join">
+                        <input class="input join-item" placeholder="Email" />
+                        <button class="btn join-item rounded-r-xl bg-pink-500 text-white">
+                            Apply
+                        </button>
+                    </div>
+                </div>
+                <div class="cart-box bg-white mt-10 p-5">
+                    <h2 class="font-bold">Cart</h2>
+                    <button class="btn" id="btn-clear">Clear</button>
+                    <div class="space-y-5" id="cart-container"></div>
+                    <div class="">
+                        <h2>Total Price: <span id="total-price">0</span> TK</h2>
+                        <h2>Total Quantity: <span id="total-quantity">0</span> Items</h2>
+                        <button class="btn bg-pink-500 text-white btn-block">
+                            Make Purchase
+                        </button>
+                    </div>
+                </div>
+            </aside>
+        </section>
+
+
+    </main>
+
 </body>
+
 </html>

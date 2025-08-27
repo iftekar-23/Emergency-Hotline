@@ -14,7 +14,6 @@ for (const btn of heartBtns) {
     })
 }
 
-
 // Call Button
 
 const callBtns = document.getElementsByClassName('call-btn');

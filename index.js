@@ -37,7 +37,7 @@ for (const callBtn of callBtns) {
 
         const number = callBtn.parentNode.parentNode.children[3].innerText;
 
-        alert('Calling ' + serviceName + ' ' + number + '...');
+        alert('📞 Calling ' + serviceName + ' ' + number + '...');
 
         const time = new Date().toLocaleTimeString();
 
